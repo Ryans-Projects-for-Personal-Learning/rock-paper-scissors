@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class = "header">
+      <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class = "game">
+      <h2>Opponent</h2>
+      <img id = "question_circle" class = "options" src = "./images/question_circle.png">
+
+      <h2>You</h2>
+      <a onclick = "changeRockState()"><img id = "rock" class = "options" src = "./images/rock_unselected.png"></a>
+      <a onclick = "changePaperState()"><img id = "paper" class = "options" src = "./images/paper_unselected.png"></a>
+      <a onclick = "changeScissorsState()"><img id = "scissors" class = "options" src = "./images/scissors_unselected.png"></a>
+      
+      <h2>Outcome</h2>
+      <p id = "result"></p>
+    </div>
+
+    <div class = "instructions">
+      <h1>Instructions</h1>
+      <p>Click on the object of your choice to select it. Your opponent will then randomly pick an object themselves. Rock beats scissors, paper beats rock, and scissors beats paper. If both players select the same item, then it is a tie.</p>
+    </div>
+    <div class = "footer">
+      <center><p>Project for personal learning by Ryan Loi</p></center>
+    </div>
+    
+    <script src="functions.js" async defer></script>
+  </body>
+</html>
